@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Website</title>
+    <title>Isolation Overview</title>
     <style>
     .topnav {
         overflow: hidden;
@@ -38,6 +38,15 @@
 </head>
 
 <body>
+<h1>Isolation Overview</h1>
+<!-- Tab Menu -->
+<div class="topnav">
+    <a href="{{ url_for('home') }}">Section A 1</a>
+    <a href="{{ url_for('section1') }}">Section A</a>
+    <a href="{{ url_for('section2') }}">Section B</a>
+</div>
+
+<br>
 <!-- Main Content -->
 {% block body %}{% endblock %}
 

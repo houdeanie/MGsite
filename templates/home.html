@@ -1,8 +1,48 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<h1>Home</h1>
+<h1>Section 1 A</h1>
 
-<th>{{ input }}</th>
-
+<!--<th>{{ input }}</th>-->
+<div>
+    <table className='form center pa4 br3 shadow-5' >
+        <tr className='table' align="center">
+            <td > Room </td>
+            <td > Machine </td>
+            <td> Machine Status </td>
+            <td> Sensors </td>
+            <td> Sensor Status </td>
+            <td> Sensor worker </td>
+            <td> Machine Worker </td>
+        </tr>
+            <tr align="center">
+            <td> EE 102 </td>
+            <td> Toaster1000 </td>
+            <td> {{ machine }} </td>
+            <td> Smart Plug </td>
+            <!--<td> {sensor} </td>-->
+            <td> 
+                <!--<input placeholder="No one"/> -->
+                {{ plugoutput }}
+            </td>
+            <td>
+                <input placeholder="No one"/> 
+            </td>
+            <td>
+                <input placeholder="No one"/> 
+            </td>
+        </tr>
+        <tr align="center">
+            <td> EE 102 </td>
+            <td> TV2000 </td>
+            <td> {{ machine }} </td>
+            <td> Smart Plug </td>
+            <td> TRUE </td>
+            <td> <input placeholder="No one"/>  </td>
+            <td>
+                <input placeholder="No one"/> 
+            </td>
+            </tr>
+    </table>
+</div>
 {% endblock %}
